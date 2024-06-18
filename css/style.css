@@ -1,0 +1,434 @@
+@font-face {
+  font-family: proxima;
+  src: url(font/proxima.woff);
+}
+
+@font-face {
+  font-family: zap;
+  src: url(font/zap.woff); 
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #424B57;
+	height: 1000vh;
+}
+
+a {
+	color: inherit;
+	display: inline-block;
+}
+
+h1, h2, h3, h4 {
+	font-family: proxima;
+}
+
+p, a, cite, blockquote {
+	font-family: zap;
+}
+
+/*landing-page*/
+
+
+.landing-page {
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+	filter: brightness(90%);
+	height: 100vh;
+	width: 100%;
+	background-position: center;
+
+	/*layout*/
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.landing-page h1 {
+	font-size: 12rem;
+	letter-spacing: 1rem;
+	color: #fff;
+	font-weight: 100;
+
+}
+
+/*akhir lading-page*/
+
+/*typhography*/
+
+.typho h1,
+.typho p,
+.typho h2 {
+	color: #fff
+}
+
+
+.typho {
+	height: 75vh;
+	background-color: #000;
+
+	/*layout*/
+	display: flex;
+	align-items: center;
+	grid-gap: 1.2rem;
+	padding: 3%;
+}
+ 
+.typho .satu,
+.typho .dua {
+	width: 50%;
+}
+
+.typho .satu {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	grid-gap: 1rem;
+
+
+}
+
+.typho .dua {
+	display: flex;
+	align-items: flex-end;
+	height: 100%;
+	justify-content: center;
+}
+
+.typho .dua .headline {
+	font-size: 8rem;
+	font-weight: 200;
+}
+
+
+/*akhir typhography*/
+
+
+
+/*image*/
+
+.contain-img {
+	height: 200vh;
+	color: #fff;
+}
+
+.contain-img .page-satu {
+	display: flex;
+	grid-gap: 1.4rem;
+	padding: 3%;
+}
+
+.contain-img .page-satu .wadah-satu .box .bingkai img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+
+}
+
+.contain-img .page-satu .wadah-satu,
+.contain-img .page-satu .wadah-dua {
+	width: 50%;
+}
+
+
+/*img-satu*/
+
+.contain-img .page-satu .wadah-satu {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.contain-img .page-satu .wadah-satu .box {
+	width: 100%;
+	height: 70vh;
+
+	
+
+	position: relative;
+}
+
+.contain-img .page-satu .wadah-satu .box .bingkai {
+	position: absolute;
+	/*transform: translate(-50%, -50%);*/
+	/*top: 50%;
+	left: 50%;*/
+	border-radius: .2rem;
+	overflow: hidden;
+}
+
+
+.contain-img .page-satu .wadah-satu .box .img-satu {
+	height: 190px;
+	width: 300px;
+	top: 50px;
+	left: 5%;
+	z-index: 1;
+}
+
+.contain-img .page-satu .wadah-satu .box .img-dua {
+	width: 235px;
+	height: 300px;
+	top: 5px;
+	right: 10%;
+	z-index: 3;
+}
+
+.contain-img .page-satu .wadah-satu .box .img-tiga {
+	width: 250px;
+	height: 207px;
+	bottom: 34px;
+	left: 17%;
+	z-index: 2;
+}
+
+.contain-img .page-satu .wadah-satu .box .img-empat {
+	width: 175px;
+	height: 270px;
+	bottom: -32px;
+	right: 15%;
+	z-index: 4;
+}
+
+
+.contain-img .page-satu .wadah-satu p {
+	width: 20rem;
+}
+
+
+
+
+/*img-dua*/
+
+.contain-img .page-satu .wadah-dua {
+	display: flex;
+	flex-direction: column;
+	grid-gap: 1rem;
+
+}
+
+.contain-img .page-satu .wadah-dua .box {
+	width: 100%;
+	height: 56vh;
+
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	grid-gap: 1rem;
+
+}
+
+
+
+.contain-img .page-satu .wadah-dua .box .bingkai img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+
+.contain-img .page-satu .wadah-dua .box .bingkai {
+	width: 235px;
+	height: 300px;
+	
+
+}
+
+
+.contain-img .page-satu .wadah-dua .box .photo-dua {
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.page-dua {
+	display: flex;
+	height: 100vh;
+	padding: 0 3%;
+}
+
+.page-dua .part-1 {
+	width: 35%;
+	height: 100%;
+}
+
+.page-dua .part-2 {
+	width: 65%;
+	height: 100%;
+}
+
+
+
+
+/*img-tiga*/
+
+.page-dua .part-1 .box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.page-dua .part-1 .box .bingkai {
+	width: 295px;
+	height: 380px;
+}
+
+.page-dua .part-1 .box .bingkai img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.page-dua .part-1 p {
+	margin-top: 2rem;
+}
+
+
+
+/*img-empat*/
+
+.page-dua .part-2 {
+	position: relative;
+	padding: 0 3%;
+}
+
+.page-dua .part-2 .box {
+	
+	height: 90%;
+}
+
+.page-dua .part-2 .box .bingkai {
+	width: 200px;
+	height: 278px;
+	position: absolute;
+	/*transform: translate(-50%, -50%);*/
+}
+
+.page-dua .part-2 .box .img-1 {
+	top: 0;
+	right: 50%;
+	transform: translateX(50%);
+}
+
+.page-dua .part-2 .box .img-2 {
+	top: 30%;
+	left: 15%;
+	transform: translateY(-50%);
+}
+
+.page-dua .part-2 .box .img-3 {
+	top: 40%;
+	right: 15%;
+	transform: translateY(-50%);
+
+}
+
+.page-dua .part-2 .box .img-4 {
+	bottom: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.page-dua .part-2 .box .bingkai img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+
+/*akhir image*/
+
+
+
+.typho-head {
+	margin-top: 2.4rem;
+	display: flex;
+	align-items: center;
+	padding: 0 3%;
+
+	height: 100vh;
+
+	color: #fff;
+	background-color: #000;
+
+	position: relative;
+
+}
+
+.typho-head .satu {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	grid-gap: 1.4rem;
+	width: 50%;
+	height: 100%;
+}
+
+.typho-head .satu .big {
+	font-size: 5rem;
+}
+
+.typho-head .satu .head {
+	font-size: 1.6rem;
+}
+
+.typho-head .dua {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	grid-gap: 1.4rem;
+	width: 50%;
+
+}
+
+.typho-head .dua h2 {
+	font-size: 2rem;
+}
+
+.typho-head .dua h4 {
+	font-size: 1.4rem;
+}
+
+
+.typho-head .footer-typho {
+	width: 100%;
+	
+	padding: 3%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	grid-gap: 2rem;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.typho-head .footer-typho .kotak {
+	border: 1.5px solid #fff;
+	border-radius: 1rem;
+	width: 120px;
+	height: 40px;
+}
